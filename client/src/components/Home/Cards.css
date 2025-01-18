@@ -1,0 +1,113 @@
+.product-list {
+    display: flex !important;
+    flex-wrap: wrap !important;  
+    justify-content: space-between !important; 
+    padding: 20px !important; 
+    margin-top: -350px !important;
+    position: relative;
+}
+
+.product-card {
+    border: 1px solid #e6dada !important;
+    border-radius: 8px !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    padding: 11px !important;
+    margin: 10px !important;
+    margin-top: 62px !important;
+    transition: transform 0.2s ease !important;
+    width: calc(25% - 20px) !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important; /* Ensure links don’t get underlined */
+    color: inherit !important; /* Preserve original text color */
+}
+
+.product-card:hover {
+    transform: scale(1.05) !important;
+    background-color: none !important;
+    text-decoration: none !important; /* Prevent text decoration on hover */
+}
+
+.product-image {
+    width: 100% !important; 
+    height: 220px; 
+    object-fit:cover !important;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.product-title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: black !important; /* Ensure title stays black */
+    text-decoration: none !important; /* Remove underline for links */
+}
+
+.product-title:hover {
+    text-decoration: none !important; /* Remove underline on hover */
+    color: black !important; /* Prevent color change on hover */
+}
+
+.product-details {
+    margin-top: 10px !important;
+}
+
+.product-long-title {
+    font-size: 14px !important;
+    color: #333 !important;
+    margin: 5px 0 !important;
+    line-height: 1.4 !important; /* Better line spacing */
+}
+
+.product-description {
+    font-size: 12px !important;
+    color: #555 !important;
+    margin: 10px 0 !important;
+}
+
+/* Tagline styling */
+.product-tagline {
+    font-size: 9px !important;
+    color: #333 !important;
+    font-weight: bold !important;
+    padding: 8px 14px !important;
+    background-color: #eaeaea !important;
+    border-radius: 20px !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.product-tagline:hover {
+    background-color: #ff6347 !important; /* Vibrant background on hover */
+    color: white !important; /* Change text color to white */
+}
+
+/* Prevent underlining for all text elements inside the card */
+.product-long-title,
+.product-description,
+.product-tagline {
+    text-decoration: none !important;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(33.33% - 40px) !important; /* 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 40px) !important; /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100% !important; /* 1 item per row on very small screens */
+    }
+}

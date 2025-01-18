@@ -1,0 +1,14 @@
+.home-section {
+    width: 98.7vw; /* Ensure the section takes full width of the viewport */
+    position: sticky;
+    min-height: calc(100vh - 10px);
+    overflow: hidden; /* Hide any overflow from carousel or images */
+  }
+  
+  .banner-part {
+    width: 100vw; /* Full width of the viewport */
+    height: auto;
+    max-width: 100%; /* Ensure it doesn't shrink smaller */
+    overflow: hidden; /* Prevent overflow */
+  }
+  

@@ -1,0 +1,142 @@
+.sectionS {
+  padding: 20px 26px !important;
+  max-width: 350px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  margin-top: 10px !important;
+  border: 1px solid #d1c8c8 !important;
+  margin: auto;
+  height: 540px !important; /* Adjusted height to accommodate all content */
+}
+
+.imgLogo {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.imgLogo img {
+  width: 110px !important;
+  object-fit: contain !important;
+}
+
+/* Form Styling */
+.form {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+h1 {
+  font-size: 28px !important;
+  margin-bottom: 20px !important;
+  color: #111 !important;
+  text-align: left !important;
+  font-weight: normal !important;
+}
+
+.form-data {
+  margin-bottom: 15px !important;
+}
+
+.form-data label {
+  font-size: 13px !important;
+  font-weight: bold !important;
+  display: block !important;
+  margin-bottom: 5px !important;
+  color: #111 !important;
+}
+
+/* Input Field Styling */
+.form-data input {
+  width: 100% !important;
+  padding: 6px 40px 6px 10px !important; /* Extra padding on the right for toggle button */
+  font-size: 14px !important;
+  border: 1px solid #a6a6a6 !important;
+  border-radius: 3px !important;
+  box-sizing: border-box !important;
+}
+
+.form-data input:focus {
+  border-color: #e47911 !important;
+  outline: none !important;
+  box-shadow: 0 0 5px rgba(228, 121, 17, 0.5) !important;
+}
+
+/* Password Field Container */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100% !important;
+  padding: 6px 35px 6px 10px !important; /* Space for toggle icon */
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.password-container .toggle-password:hover {
+  color: #e47911;
+}
+
+/* Button Styling */
+.continue {
+  margin-top: 20px !important;
+}
+
+.continue button {
+  width: 100% !important;
+  background-color: #f0c14b !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  font-size: 16px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  border: 1px solid #f0c14b;
+}
+
+.continue button:hover {
+  background-color: #e4b93d !important;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 400px) {
+  .sectionS {
+    padding: 15px !important;
+  }
+}
+
+.newAccount {
+  margin-top: 15px !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  margin-bottom: 15px;
+}
+
+.newAccount a {
+  text-decoration: none !important;
+  padding: 5px !important;
+  color: #111;
+  width: 100px !important;
+  cursor: pointer !important;
+}
+
+.newAccount a:hover {
+  text-decoration: underline !important;
+}
+
+#shop {
+  text-decoration: none;
+  color: rgb(112, 112, 200);
+}
+
+#shop:hover {
+  color: rgba(228, 121, 17) !important;
+  text-decoration: underline;
+}

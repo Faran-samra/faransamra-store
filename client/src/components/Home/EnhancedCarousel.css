@@ -1,0 +1,91 @@
+
+/* Carousel Container */
+.carousel-container {
+  margin: 50px auto !important;
+  max-width: 1200px !important;
+  text-align: center !important;
+  background-color: white;
+}
+
+/* Slick Navigation Arrows */
+.slick-prev,
+.slick-next {
+  z-index: 2 !important;
+ border: 50% !important;
+
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+ 
+ 
+}
+
+/* Hover Effect for Navigation Arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #f3f3f3 !important;
+  border-color: #bdb9b9 !important;
+  border-radius: 50% !important;
+  margin-top: -2px !important;
+  
+}
+
+/* Arrow Icons */
+.slick-prev::before,
+.slick-next::before {
+  font-size: 35px !important;
+  color: darkgray !important;
+  opacity: 1 !important;
+}
+
+/* Position of Arrows */
+.slick-prev {
+  left: 10px !important;
+}
+
+.slick-next {
+  right: 10px !important;
+}
+
+/* Responsive Arrow Adjustments */
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .slick-prev {
+    left: -15px !important;
+  }
+
+  .slick-next {
+    right: -15px !important;
+  }
+}
+
+/* Individual Slide */
+.slide {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+}
+
+/* Slide Image */
+.slide img {
+  max-width: 200px !important;
+  height: 150px !important;
+  object-fit: cover!important;
+  margin-bottom: 10px !important;
+  
+}
+
+/* Slide Title */
+.slide h4 {
+  font-size: 1.2em !important;
+  color: #333 !important;
+}

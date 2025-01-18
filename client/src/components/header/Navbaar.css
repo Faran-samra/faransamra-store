@@ -1,0 +1,226 @@
+.navbar {
+  background-color: black !important;
+}
+.nav-link {
+  color: #ffffff !important;
+  padding: 1px !important;
+}
+.nav-link:hover {
+  color: #ff9900 !important;
+  text-decoration: none !important;
+}
+
+.amazonLogo img {
+  height: 50px;
+  padding: 1px;
+}
+
+.amazonLogo:hover {
+  color: #ff9900 !important;
+  text-decoration: none !important;
+}
+.Deliver {
+  color: gainsboro !important;
+  font-size: smaller !important;
+  margin-left: 15px !important;
+}
+#Special a {
+  display: inline-block !important;
+  text-align: left !important; /* Align text to the left */
+}
+.Deliver, .P {
+  display: block !important; /* Stack the elements vertically */
+}
+.P i {
+  color: #febd69 !important; /* Icon color */
+  margin-top: 5px !important;
+}
+
+#Special a:hover {
+  color: #ff9900 !important;
+  text-decoration: none !important;
+}
+.P{
+  margin-left: -2px !important;
+  margin-top: -10px !important;
+}
+
+.second {
+  margin-left: 55px !important;
+}
+
+
+#Special a:hover .Deliver,
+#Special a:hover .P,
+#Special a:hover .P i {
+  color: #ff9900 !important;
+}
+.dflex {
+  margin-right: 50% !important;
+}
+/* .form-control{
+    width: 500px !important;
+
+} */
+.amazon-search {
+  flex-grow: 1 !important; /* Allows the search bar to expand */
+  max-width: 600px !important; /* Limit the max width similar to Amazon */
+  display: flex !important;
+  align-items: center !important;
+  margin-right: 15% !important;
+}
+.amazon-search:hover{
+  border: 2px solid #ff9900 !important;
+  border-radius: 6px !important; /* Rounded left corners */
+}
+.search-input {
+  width: 100% !important;
+  padding: 10px !important;
+  border-radius: 4px 0 0 4px !important; /* Rounded left corners */
+  border: 1px solid #ccc !important;
+  outline: none !important;
+}
+
+.search-btn {
+  background-color: #febd69 !important; /* Amazon's button color */
+  border: 1px solid #febd69 !important;
+  border-radius: 0 4px 4px 0 !important; /* Rounded right corners */
+  padding: 14px 14px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}
+.search-btn:hover{
+ background-color: #d4850f !important;
+}
+.search-btn i {
+  color: white !important; /* White magnifying glass icon */
+}
+
+.search-input:focus {
+  border-color: #febd69 !important; /* Matching Amazon's input border focus */
+  box-shadow: 0 0 3px rgba(255, 153, 0, 0.5) !important; /* Soft orange glow */
+}
+#c{
+  margin-left: 7px !important;
+}
+
+
+/* Avatar Styling */
+.avatr {
+  width: 40px !important;           /* Ensure the avatar has a consistent width */
+  height: 40px !important;          /* Ensure the avatar has a consistent height */
+  border-radius: 50% !important;    /* Make the avatar circular */
+  background-color: #007bff !important; /* A nice blue color for the avatar */
+  color: #ffffff !important;        /* White text for contrast */
+  font-size: 1rem !important;       /* Set the font size for initials */
+  display: flex !important;         /* Center initials inside the avatar */
+  align-items: center !important;   /* Align content vertically */
+  justify-content: center !important; /* Align content horizontally */
+  cursor: pointer !important;       /* Show a pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Smooth hover effect */
+  margin-right: 10px !important;
+}
+
+/* Hover Effects */
+.avatr:hover {
+  transform: scale(1.1) !important; /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15) !important; /* Darker shadow on hover */
+}
+
+
+/* General styles for smaller devices */
+@media screen and (max-width: 1200px) {
+  .amazon-search {
+    max-width: 500px !important;
+    margin-right: 10% !important;
+  }
+  .search-btn {
+    padding: 12px 12px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dflex {
+    margin-right: 25% !important;
+  }
+  .amazonLogo img {
+    height: 40px;
+  }
+  .amazon-search {
+    max-width: 400px !important;
+  }
+  .search-input {
+    padding: 8px !important;
+  }
+  .search-btn {
+    padding: 10px 10px !important;
+  }
+  .avatr {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dflex {
+    margin-right: 15% !important;
+  }
+  .second {
+    margin-left: 30px !important;
+  }
+  .amazonLogo img {
+    height: 35px;
+  }
+  .amazon-search {
+    max-width: 300px !important;
+    flex-grow: unset !important;
+  }
+  .search-input {
+    padding: 7px !important;
+  }
+  .search-btn {
+    padding: 8px 8px !important;
+  }
+  .Deliver {
+    font-size: smaller !important;
+  }
+  #Special a {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dflex {
+    margin-right: 5% !important;
+  }
+  .second {
+    margin-left: 15px !important;
+  }
+  .amazonLogo img {
+    height: 30px;
+  }
+  .amazon-search {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .search-input {
+    padding: 6px !important;
+    font-size: 0.9rem !important;
+  }
+  .search-btn {
+    padding: 6px 6px !important;
+  }
+  .Deliver {
+    font-size: x-small !important;
+  }
+  .avatr {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.8rem !important;
+    margin-right: 5px !important;
+  }
+}

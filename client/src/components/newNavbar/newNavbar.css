@@ -1,0 +1,101 @@
+.navbarr {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 10px 20px !important;
+    font-family: "Arial", sans-serif !important;
+    background-color: #123456;
+  }
+  
+  .navbar__menu {
+    display: flex !important;
+    width: 100% !important;
+  }
+  
+  .navbar__item {
+    color: white !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    transition: color 0.2s ease-in-out !important;
+    padding: 0 10px !important;
+  }
+  
+  .navbar__item:hover {
+    color: #ff9900 !important;
+  }
+  
+  .navbar__item:active {
+    color: #c97800 !important;
+  }
+  
+  .navbar__right {
+    margin-left: auto !important;
+  }
+  
+
+  /* General styles for medium screens */
+@media screen and (max-width: 1200px) {
+  .navbarr {
+    padding: 8px 15px !important;
+  }
+  .navbar__item {
+    font-size: 13px !important;
+    padding: 0 8px !important;
+  }
+}
+
+/* Styles for tablet devices */
+@media screen and (max-width: 992px) {
+  .navbarr {
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    padding: 6px 10px !important;
+  }
+  .navbar__menu {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .navbar__item {
+    font-size: 12px !important;
+    padding: 5px 5px !important;
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .navbarr {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 10px !important;
+  }
+  .navbar__menu {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+  .navbar__item {
+    font-size: 12px !important;
+    padding: 8px 0 !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .navbar__right {
+    margin-left: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-top: 10px !important;
+  }
+}
+
+/* Styles for very small devices */
+@media screen and (max-width: 576px) {
+  .navbarr {
+    padding: 5px !important;
+  }
+  .navbar__item {
+    font-size: 11px !important;
+    padding: 6px 0 !important;
+  }
+}

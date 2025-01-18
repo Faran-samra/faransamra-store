@@ -1,0 +1,33 @@
+.Carousel {
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Height will be determined by the images */
+    position: relative;
+    overflow: hidden;
+}
+
+.Caroimage {
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the space */
+}
+
+.MuiButtonBase-root {
+    min-width: 0; /* Ensure buttons are not too wide */
+    margin: 0 5px; /* Add margin to space from edges */
+}
+
+.MuiButtonBase-root:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+.MuiButtonBase-root:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Additional styling for button positioning */
+.MuiCarousel-nav {
+    position: absolute; /* Ensure the buttons are positioned absolutely */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+}
+
