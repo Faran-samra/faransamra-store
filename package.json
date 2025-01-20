@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "app.js",
   "engines": {
-    "node": "20.x",
-    "npm": "10.9.2"
+    "node": "10.16.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "build": "cd client && npm install && npm run build",
-    "heroku-postbuild": "npm install --legacy-peer-deps && npm run build && mv client/build server/build"
+    "start": "node backend/server.js/app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run build && mv client/build server/build"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
