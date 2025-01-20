@@ -2,16 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "main": "app.js",
+  "engines": {
+    "node": "20.x",
+    "npm": "10.9.2"
+  },
   "scripts": {
     "start": "node app.js",
     "build": "your-build-command",  
-    "heroku-postbuild": "npm run build && npm run move-dist",
-    "move-dist": "mv dist /some/desired/folder"  
+    "heroku-postbuild": "npm run build && npm run move-dist", 
+    "move-dist": "mv dist /some/desired/folder"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
