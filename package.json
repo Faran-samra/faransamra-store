@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
 "scripts": {
-  "start": "node backend/server.js",
+  "start": "app.js",
   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer-deps --prefix client && npm run build --prefix client"
 },
   "engines": {
