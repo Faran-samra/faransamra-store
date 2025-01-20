@@ -6,7 +6,7 @@
     "node": "10.16.0"
   },
   "scripts": {
-    "start": "node backend/server.js/app.js",
+    "start": "node backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run build && mv client/build server/build"
   },
   "dependencies": {
