@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run build"
+    "build": "your-build-command",  
+    "heroku-postbuild": "npm run build && npm run move-dist",
+    "move-dist": "mv dist /some/desired/folder"  
   },
   "keywords": [],
   "author": "",
