@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
 "scripts": {
-  "start": "node backend/server.js",
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run build",
-  "build": "your_build_command_here"
+  "start": "node app.js",
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix"
 },
   "engines": {
     "node": "20.x"
