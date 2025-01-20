@@ -4,7 +4,7 @@ import Navbaar from "./components/header/Navbaar";
 import NewNavbar from "./components/newNavbar/newNavbar";
 import MainComponent from "./components/Home/MainComponent";
 import Cards from "./components/Home/Cards";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
 import { Login } from "./components/Sign_Up/Login";
 import { SignUp } from "./components/Sign_Up/SignUp";
 import Cart from "./components/cart/Cart";
