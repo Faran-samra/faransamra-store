@@ -8,9 +8,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build": "your-build-command",  
-    "heroku-postbuild": "npm run build && npm run move-dist", 
-    "move-dist": "mv dist /some/desired/folder"
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run build && mv client/dist server/dist"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
