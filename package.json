@@ -10,9 +10,10 @@
     "start": "node app.js",
     "build": "cd client && npm install && npm run build",
     "heroku-postbuild": "npm install --legacy-peer-deps && npm run build && mv client/build server/build"
-
   },
   "dependencies": {
+    "redux": "^4.2.1",
+    "@redux-devtools/extension": "^3.3.0",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -21,8 +22,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.6.3",
     "morgan": "^1.10.0",
-    "redux": "^4.2.1",
-    "redux-devtools-extension": "^2.13.9",
     "validator": "^13.12.0"
   }
 }
